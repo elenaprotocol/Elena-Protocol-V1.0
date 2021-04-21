@@ -1,0 +1,410 @@
+{
+	"compiler": {
+		"version": "0.6.11+commit.5ef660b1"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "COLLATERAL_RATIO_PRECISION",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "PRICE_PRECISION",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "excess_collateral_dollar_value_d18",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "shares_price_usd",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "col_price_usd",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "shares_amount",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct USEPoolAlgo.BuybackShares_Params",
+						"name": "params",
+						"type": "tuple"
+					}
+				],
+				"name": "calcBuyBackShares",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "col_price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "collateral_amount_d18",
+						"type": "uint256"
+					}
+				],
+				"name": "calcMint1t1USE",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "shares_price_usd",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "col_price_usd",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "shares_amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "collateral_amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "col_ratio",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct USEPoolAlgo.MintFU_Params",
+						"name": "params",
+						"type": "tuple"
+					}
+				],
+				"name": "calcMintFractionalUSE",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "shares_price_usd",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "col_price_usd",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "shares_amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "collateral_amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "col_ratio",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct USEPoolAlgo.MintFU_Params",
+						"name": "params",
+						"type": "tuple"
+					}
+				],
+				"name": "calcMintFractionalWithCollateral",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "shares_price_usd",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "col_price_usd",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "shares_amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "collateral_amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "col_ratio",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct USEPoolAlgo.MintFU_Params",
+						"name": "params",
+						"type": "tuple"
+					}
+				],
+				"name": "calcMintFractionalWithShare",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "collateral_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "col_price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "global_collat_value",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "frax_total_supply",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "global_collateral_ratio",
+						"type": "uint256"
+					}
+				],
+				"name": "calcRecollateralizeUSEInner",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "col_price_usd",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "use_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "calcRedeem1t1USE",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "total_supply",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "global_collateral_ratio",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "global_collat_value",
+						"type": "uint256"
+					}
+				],
+				"name": "recollateralizeAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/USE/Pools/USEPoolAlgo.sol": "USEPoolAlgo"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/@openzeppelin/contracts/math/SafeMath.sol": {
+			"keccak256": "0x8d890f7a794b66b8b3ab54779603c254f85ee0d436dd4a17b3543c6629b726f8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://887bb68104c8f862a66939b192a85e79564bed9bbe72cda6240fd89bbea642fd",
+				"dweb:/ipfs/QmbC56SFqW7UCx26RfPFWPiEXnQTJXSBA5r4SrojRMHqeM"
+			]
+		},
+		"contracts/USE/Pools/USEPoolAlgo.sol": {
+			"keccak256": "0xb19a6225c2d08c4a17ce8b9340cbcf153bf32fc3ec2b12f6a6dec06284b43099",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e4443f3b811dbfcdfc0c43f57bb863dda94ca75ac541273b53123e56f2042e2c",
+				"dweb:/ipfs/QmTNduEi1FRnYyipv3jLqjdUvJg6U7jTzY3542icwAkfz6"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,175 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"görli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"deployedBytecode": {
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"gasEstimates": null,
+		"methodIdentifiers": {
+			"PERCENT()": "b85a8b20",
+			"getOtherToken(address,address)": "d6910937"
+		}
+	},
+	"abi": [
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"internalType": "address",
+					"name": "targetToken",
+					"type": "address"
+				},
+				{
+					"indexed": false,
+					"internalType": "address",
+					"name": "otherToken",
+					"type": "address"
+				},
+				{
+					"indexed": false,
+					"internalType": "uint256",
+					"name": "lpp",
+					"type": "uint256"
+				},
+				{
+					"indexed": false,
+					"internalType": "uint256",
+					"name": "cp",
+					"type": "uint256"
+				},
+				{
+					"components": [
+						{
+							"internalType": "uint256",
+							"name": "targetTokenRemoved",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "otherTokenRemoved",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "liquidityRemoved",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "otherTokenIn",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "targetTokenOut",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "targetTokenAdded",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "otherTokenAdded",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "liquidityAdded",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "targetTokenRemain",
+							"type": "uint256"
+						}
+					],
+					"indexed": false,
+					"internalType": "struct ProtocolValue.PCVInfo",
+					"name": "pcv",
+					"type": "tuple"
+				}
+			],
+			"name": "PCVResult",
+			"type": "event"
+		},
+		{
+			"inputs": [],
+			"name": "PERCENT",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_pair",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_targetToken",
+					"type": "address"
+				}
+			],
+			"name": "getOtherToken",
+			"outputs": [
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		}
+	]
+}

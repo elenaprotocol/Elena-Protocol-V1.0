@@ -1,0 +1,1877 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"görli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"deployedBytecode": {
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"gasEstimates": null,
+		"methodIdentifiers": {
+			"BUYBACK_PAUSER()": "0d904ddd",
+			"COLLATERAL_PRICE_PAUSER()": "1636e804",
+			"COLLATERAL_RATIO_MAX()": "dd89fe0a",
+			"COLLATERAL_RATIO_PRECISION()": "d07ac67e",
+			"COMMUNITY_RATER()": "29323fb1",
+			"DEFAULT_ADMIN_ROLE()": "a217fddf",
+			"MINT_PAUSER()": "172a7b06",
+			"PRECISION()": "aaf5eb68",
+			"PRICE_PRECISION()": "95082d25",
+			"RECOLLATERALIZE_PAUSER()": "6ad3531f",
+			"REDEEM_PAUSER()": "3a26a91b",
+			"RESERVE_RATIO_PRECISION()": "4ee3274e",
+			"availableExcessCollatDV()": "f61adab2",
+			"bonus_rate()": "4c634934",
+			"buyBackPaused()": "7f877f85",
+			"buyBackShares(uint256,uint256)": "aec25ce7",
+			"buyback_tax()": "ece38e2d",
+			"calcBuyBackShares((uint256,uint256,uint256,uint256))": "5134d99c",
+			"calcMint1t1USE(uint256,uint256)": "e66a7fda",
+			"calcMintFractionalUSE((uint256,uint256,uint256,uint256,uint256))": "2223f149",
+			"calcMintFractionalWithCollateral((uint256,uint256,uint256,uint256,uint256))": "6a66bf83",
+			"calcMintFractionalWithShare((uint256,uint256,uint256,uint256,uint256))": "202ea199",
+			"calcRecollateralizeUSEInner(uint256,uint256,uint256,uint256,uint256)": "106e1a39",
+			"calcRedeem1t1USE(uint256,uint256)": "20e6da17",
+			"collatDollarBalance()": "17284c94",
+			"collateralPricePaused()": "8d2ac7a4",
+			"collateral_address()": "1eaa0e17",
+			"collateral_token()": "2621db2f",
+			"collectRedemption()": "12ace5a2",
+			"community_address()": "1a286ad7",
+			"community_rate_in_share()": "fa2febe2",
+			"community_rate_in_use()": "dc9b60f3",
+			"community_rate_ratio()": "a57381ea",
+			"dynamicRedemptionTax(uint256,uint256,uint256)": "3b837521",
+			"getCollateralAmount()": "315deeaa",
+			"getCollateralPrice()": "f7683bbc",
+			"getRoleAdmin(bytes32)": "248a9ca3",
+			"getRoleMember(bytes32,uint256)": "9010d07c",
+			"getRoleMemberCount(bytes32)": "ca15c873",
+			"global_use_supply_adj()": "a49c9166",
+			"grantRole(bytes32,address)": "2f2ff15d",
+			"hasRole(bytes32,address)": "91d14854",
+			"lastRedeemed(address)": "abae2c4c",
+			"mint1t1USE(uint256,uint256)": "8ac75d6a",
+			"mintFractionalUSE(uint256,uint256,uint256)": "5fc2477e",
+			"mintPaused()": "7e4831d3",
+			"mintingOpened()": "d5eecae9",
+			"mintingTax()": "ab80926d",
+			"minting_required_reserve_ratio()": "29be843a",
+			"minting_tax_base()": "d30016cb",
+			"minting_tax_multiplier()": "51161b2f",
+			"missing_decimals()": "3ed4e55c",
+			"owner_address()": "80edef8e",
+			"pausedPrice()": "c74ec56a",
+			"pool_ceiling()": "6526a12a",
+			"recollat_tax()": "736b2d61",
+			"recollateralizeAmount(uint256,uint256,uint256)": "0ff24ec1",
+			"recollateralizePaused()": "6d2c5615",
+			"recollateralizeUSE(uint256,uint256)": "abb5bb1e",
+			"redeem1t1USE(uint256,uint256)": "00972dc6",
+			"redeemCollateralBalances(address)": "08a7493d",
+			"redeemFractionalUSE(uint256,uint256,uint256)": "86994bc0",
+			"redeemPaused()": "b235d468",
+			"redeemSharesBalances(address)": "38423a09",
+			"redemptionOpened()": "c31587b8",
+			"redemptionTax()": "6dfa7e2b",
+			"redemption_delay()": "15128425",
+			"redemption_gcr_adj()": "b929e2de",
+			"redemption_required_reserve_ratio()": "26fc803f",
+			"redemption_tax_base()": "2fb5e86d",
+			"redemption_tax_exponent()": "1fb0c41d",
+			"redemption_tax_multiplier()": "6481cac6",
+			"renounceRole(bytes32,address)": "36568abe",
+			"requiredReserveRatio()": "a7466afd",
+			"revokeRole(bytes32,address)": "d547741f",
+			"setCommunityParameters(address,uint256)": "5bf2930f",
+			"setMintingParameters(uint256,uint256,uint256)": "15f05352",
+			"setOwner(address)": "13af4035",
+			"setPoolParameters(uint256,uint256,uint256,uint256,uint256,uint256)": "17eae98c",
+			"setRedemptionParameters(uint256,uint256,uint256,uint256,uint256)": "7ded8ea0",
+			"setTimelock(address)": "bdacb303",
+			"shares_contract_address()": "2780130d",
+			"timelock_address()": "dc6663c7",
+			"toggleBuyBack()": "50c9ecd9",
+			"toggleCollateralPrice(uint256)": "7ad1f61b",
+			"toggleCommunityInSharesRate(uint256)": "06ed0a1d",
+			"toggleCommunityInUSERate(uint256)": "a2248a8f",
+			"toggleMinting()": "7d55094d",
+			"toggleRecollateralize()": "42d15aec",
+			"toggleRedeeming()": "daa50485",
+			"unclaimedPoolCollateral()": "7b0461e9",
+			"unclaimedPoolShares()": "6090cd50",
+			"updateOraclePrice()": "c0bbd884",
+			"use_contract_address()": "168313b3"
+		}
+	},
+	"abi": [
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_use_contract_address",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_shares_contract_address",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_collateral_address",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_creator_address",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_timelock_address",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_community_address",
+					"type": "address"
+				}
+			],
+			"stateMutability": "nonpayable",
+			"type": "constructor"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": true,
+					"internalType": "bytes32",
+					"name": "role",
+					"type": "bytes32"
+				},
+				{
+					"indexed": true,
+					"internalType": "bytes32",
+					"name": "previousAdminRole",
+					"type": "bytes32"
+				},
+				{
+					"indexed": true,
+					"internalType": "bytes32",
+					"name": "newAdminRole",
+					"type": "bytes32"
+				}
+			],
+			"name": "RoleAdminChanged",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": true,
+					"internalType": "bytes32",
+					"name": "role",
+					"type": "bytes32"
+				},
+				{
+					"indexed": true,
+					"internalType": "address",
+					"name": "account",
+					"type": "address"
+				},
+				{
+					"indexed": true,
+					"internalType": "address",
+					"name": "sender",
+					"type": "address"
+				}
+			],
+			"name": "RoleGranted",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": true,
+					"internalType": "bytes32",
+					"name": "role",
+					"type": "bytes32"
+				},
+				{
+					"indexed": true,
+					"internalType": "address",
+					"name": "account",
+					"type": "address"
+				},
+				{
+					"indexed": true,
+					"internalType": "address",
+					"name": "sender",
+					"type": "address"
+				}
+			],
+			"name": "RoleRevoked",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": true,
+					"internalType": "address",
+					"name": "user",
+					"type": "address"
+				},
+				{
+					"indexed": false,
+					"internalType": "bool",
+					"name": "bonus1",
+					"type": "bool"
+				},
+				{
+					"indexed": false,
+					"internalType": "bool",
+					"name": "bonus2",
+					"type": "bool"
+				}
+			],
+			"name": "UpdateOracleBonus",
+			"type": "event"
+		},
+		{
+			"inputs": [],
+			"name": "BUYBACK_PAUSER",
+			"outputs": [
+				{
+					"internalType": "bytes32",
+					"name": "",
+					"type": "bytes32"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "COLLATERAL_PRICE_PAUSER",
+			"outputs": [
+				{
+					"internalType": "bytes32",
+					"name": "",
+					"type": "bytes32"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "COLLATERAL_RATIO_MAX",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "COLLATERAL_RATIO_PRECISION",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "COMMUNITY_RATER",
+			"outputs": [
+				{
+					"internalType": "bytes32",
+					"name": "",
+					"type": "bytes32"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "DEFAULT_ADMIN_ROLE",
+			"outputs": [
+				{
+					"internalType": "bytes32",
+					"name": "",
+					"type": "bytes32"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "MINT_PAUSER",
+			"outputs": [
+				{
+					"internalType": "bytes32",
+					"name": "",
+					"type": "bytes32"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "PRECISION",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "PRICE_PRECISION",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "RECOLLATERALIZE_PAUSER",
+			"outputs": [
+				{
+					"internalType": "bytes32",
+					"name": "",
+					"type": "bytes32"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "REDEEM_PAUSER",
+			"outputs": [
+				{
+					"internalType": "bytes32",
+					"name": "",
+					"type": "bytes32"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "RESERVE_RATIO_PRECISION",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "availableExcessCollatDV",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "bonus_rate",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "buyBackPaused",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "shares_amount",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "COLLATERAL_out_min",
+					"type": "uint256"
+				}
+			],
+			"name": "buyBackShares",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "buyback_tax",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"components": [
+						{
+							"internalType": "uint256",
+							"name": "excess_collateral_dollar_value_d18",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "shares_price_usd",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "col_price_usd",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "shares_amount",
+							"type": "uint256"
+						}
+					],
+					"internalType": "struct USEPoolAlgo.BuybackShares_Params",
+					"name": "params",
+					"type": "tuple"
+				}
+			],
+			"name": "calcBuyBackShares",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "pure",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "col_price",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "collateral_amount_d18",
+					"type": "uint256"
+				}
+			],
+			"name": "calcMint1t1USE",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "pure",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"components": [
+						{
+							"internalType": "uint256",
+							"name": "shares_price_usd",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "col_price_usd",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "shares_amount",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "collateral_amount",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "col_ratio",
+							"type": "uint256"
+						}
+					],
+					"internalType": "struct USEPoolAlgo.MintFU_Params",
+					"name": "params",
+					"type": "tuple"
+				}
+			],
+			"name": "calcMintFractionalUSE",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "pure",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"components": [
+						{
+							"internalType": "uint256",
+							"name": "shares_price_usd",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "col_price_usd",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "shares_amount",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "collateral_amount",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "col_ratio",
+							"type": "uint256"
+						}
+					],
+					"internalType": "struct USEPoolAlgo.MintFU_Params",
+					"name": "params",
+					"type": "tuple"
+				}
+			],
+			"name": "calcMintFractionalWithCollateral",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "pure",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"components": [
+						{
+							"internalType": "uint256",
+							"name": "shares_price_usd",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "col_price_usd",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "shares_amount",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "collateral_amount",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "col_ratio",
+							"type": "uint256"
+						}
+					],
+					"internalType": "struct USEPoolAlgo.MintFU_Params",
+					"name": "params",
+					"type": "tuple"
+				}
+			],
+			"name": "calcMintFractionalWithShare",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "pure",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "collateral_amount",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "col_price",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "global_collat_value",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "frax_total_supply",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "global_collateral_ratio",
+					"type": "uint256"
+				}
+			],
+			"name": "calcRecollateralizeUSEInner",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "pure",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "col_price_usd",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "use_amount",
+					"type": "uint256"
+				}
+			],
+			"name": "calcRedeem1t1USE",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "pure",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "collatDollarBalance",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "collateralPricePaused",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "collateral_address",
+			"outputs": [
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "collateral_token",
+			"outputs": [
+				{
+					"internalType": "contract IERC20Detail",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "collectRedemption",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "community_address",
+			"outputs": [
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "community_rate_in_share",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "community_rate_in_use",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "community_rate_ratio",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "ratio",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "multiplier",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "exponent",
+					"type": "uint256"
+				}
+			],
+			"name": "dynamicRedemptionTax",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "pure",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "getCollateralAmount",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "getCollateralPrice",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "bytes32",
+					"name": "role",
+					"type": "bytes32"
+				}
+			],
+			"name": "getRoleAdmin",
+			"outputs": [
+				{
+					"internalType": "bytes32",
+					"name": "",
+					"type": "bytes32"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "bytes32",
+					"name": "role",
+					"type": "bytes32"
+				},
+				{
+					"internalType": "uint256",
+					"name": "index",
+					"type": "uint256"
+				}
+			],
+			"name": "getRoleMember",
+			"outputs": [
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "bytes32",
+					"name": "role",
+					"type": "bytes32"
+				}
+			],
+			"name": "getRoleMemberCount",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "global_use_supply_adj",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "bytes32",
+					"name": "role",
+					"type": "bytes32"
+				},
+				{
+					"internalType": "address",
+					"name": "account",
+					"type": "address"
+				}
+			],
+			"name": "grantRole",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "bytes32",
+					"name": "role",
+					"type": "bytes32"
+				},
+				{
+					"internalType": "address",
+					"name": "account",
+					"type": "address"
+				}
+			],
+			"name": "hasRole",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"name": "lastRedeemed",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "collateral_amount",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "use_out_min",
+					"type": "uint256"
+				}
+			],
+			"name": "mint1t1USE",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "collateral_amount",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "shares_amount",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "use_out_min",
+					"type": "uint256"
+				}
+			],
+			"name": "mintFractionalUSE",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "mintPaused",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "mintingOpened",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "mintingTax",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "minting_required_reserve_ratio",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "minting_tax_base",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "minting_tax_multiplier",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "missing_decimals",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "owner_address",
+			"outputs": [
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "pausedPrice",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "pool_ceiling",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "recollat_tax",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "total_supply",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "global_collateral_ratio",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "global_collat_value",
+					"type": "uint256"
+				}
+			],
+			"name": "recollateralizeAmount",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "pure",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "recollateralizePaused",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "collateral_amount",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "shares_out_min",
+					"type": "uint256"
+				}
+			],
+			"name": "recollateralizeUSE",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "use_amount",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "COLLATERAL_out_min",
+					"type": "uint256"
+				}
+			],
+			"name": "redeem1t1USE",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"name": "redeemCollateralBalances",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "use_amount",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "shares_out_min",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "COLLATERAL_out_min",
+					"type": "uint256"
+				}
+			],
+			"name": "redeemFractionalUSE",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "redeemPaused",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"name": "redeemSharesBalances",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "redemptionOpened",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "redemptionTax",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "redemption_delay",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "redemption_gcr_adj",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "redemption_required_reserve_ratio",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "redemption_tax_base",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "redemption_tax_exponent",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "redemption_tax_multiplier",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "bytes32",
+					"name": "role",
+					"type": "bytes32"
+				},
+				{
+					"internalType": "address",
+					"name": "account",
+					"type": "address"
+				}
+			],
+			"name": "renounceRole",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "requiredReserveRatio",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "bytes32",
+					"name": "role",
+					"type": "bytes32"
+				},
+				{
+					"internalType": "address",
+					"name": "account",
+					"type": "address"
+				}
+			],
+			"name": "revokeRole",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_community_address",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_ratio",
+					"type": "uint256"
+				}
+			],
+			"name": "setCommunityParameters",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_ratioLevel",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_tax_base",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_tax_multiplier",
+					"type": "uint256"
+				}
+			],
+			"name": "setMintingParameters",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_owner_address",
+					"type": "address"
+				}
+			],
+			"name": "setOwner",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "new_ceiling",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "new_bonus_rate",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "new_redemption_delay",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "new_buyback_tax",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "new_recollat_tax",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "use_supply_adj",
+					"type": "uint256"
+				}
+			],
+			"name": "setPoolParameters",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_ratioLevel",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_tax_base",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_tax_multiplier",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_tax_exponent",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_redeem_gcr_adj",
+					"type": "uint256"
+				}
+			],
+			"name": "setRedemptionParameters",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "new_timelock",
+					"type": "address"
+				}
+			],
+			"name": "setTimelock",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "shares_contract_address",
+			"outputs": [
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "timelock_address",
+			"outputs": [
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "toggleBuyBack",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_new_price",
+					"type": "uint256"
+				}
+			],
+			"name": "toggleCollateralPrice",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_rate",
+					"type": "uint256"
+				}
+			],
+			"name": "toggleCommunityInSharesRate",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_rate",
+					"type": "uint256"
+				}
+			],
+			"name": "toggleCommunityInUSERate",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "toggleMinting",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "toggleRecollateralize",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "toggleRedeeming",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "unclaimedPoolCollateral",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "unclaimedPoolShares",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "updateOraclePrice",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "use_contract_address",
+			"outputs": [
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		}
+	]
+}

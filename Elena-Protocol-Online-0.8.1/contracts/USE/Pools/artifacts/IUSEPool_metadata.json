@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.6.11+commit.5ef660b1"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "collatDollarBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/USE/Pools/IUSEPool.sol": "IUSEPool"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/USE/Pools/IUSEPool.sol": {
+			"keccak256": "0x03d104f2a523e341828716bde1d2ab83fe1f58aa9f2e47ebdc96ac04156420ca",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://80dd5cb5b14e0d5f941dcb602bc343d8ed93dde3651ef099bf20f397f49d0c4f",
+				"dweb:/ipfs/QmRhxeBEy8tL8JJHhSa2yacUSgvPGYBgaSmPHEQrMmVGge"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,175 @@
+{
+	"compiler": {
+		"version": "0.6.11+commit.5ef660b1"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "col_price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "collateral_amount_d18",
+						"type": "uint256"
+					}
+				],
+				"name": "calcMint1t1USE",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "collateral_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "col_price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "global_collat_value",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "frax_total_supply",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "global_collateral_ratio",
+						"type": "uint256"
+					}
+				],
+				"name": "calcRecollateralizeUSEInner",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "col_price_usd",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "use_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "calcRedeem1t1USE",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "total_supply",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "global_collateral_ratio",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "global_collat_value",
+						"type": "uint256"
+					}
+				],
+				"name": "recollateralizeAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/USE/Pools/USEPoolLibrary.sol": "USEPoolLibrary"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/@openzeppelin/contracts/math/SafeMath.sol": {
+			"keccak256": "0x8d890f7a794b66b8b3ab54779603c254f85ee0d436dd4a17b3543c6629b726f8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://887bb68104c8f862a66939b192a85e79564bed9bbe72cda6240fd89bbea642fd",
+				"dweb:/ipfs/QmbC56SFqW7UCx26RfPFWPiEXnQTJXSBA5r4SrojRMHqeM"
+			]
+		},
+		"contracts/USE/Pools/USEPoolLibrary.sol": {
+			"keccak256": "0x5ff7faf76fa49eb29e2f818f1ee77bc59c8f468ea86a3aac1f6eb962b65e7c6d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9a71f1635e57ca6a9334de451bd58011f75810271b31ef78681d37d8c7935d03",
+				"dweb:/ipfs/Qmf27ALwgNfW3DLdwudE415neCM6B8BKgJCaGPK38wRSo3"
+			]
+		}
+	},
+	"version": 1
+}
